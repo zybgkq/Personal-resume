@@ -1,0 +1,73 @@
+li{
+	list-style: none;
+}
+header{
+	width: 100%;
+	height: auto;
+	background:url(../image/bg2.jpg) no-repeat center;
+	background-size: 100% 100%;
+}
+.title{
+	text-align: center;
+	padding: 30px 0;
+}
+/*歌曲表头*/
+.song_list{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	background: red;
+	display: flex;
+	justify-content: center;
+	justify-content:space-around;
+}
+.song_list li{
+	padding: 0.75rem 0;
+	font-size: 1.5rem;
+}
+/*歌曲信息*/
+.music_all{
+	width: 100%;
+	overflow: auto;
+	position: relative;
+}
+.music_all_name,.music_all_author,.music_all_pic{
+	float: left;
+	width: 33.33%;
+	height: auto;
+	text-align: center;
+}
+.music_title,.music_author{
+	padding: 2rem 0;
+	font-size: 20px;
+	font-weight: 600;
+	width: 100%;
+}
+.music_pic{
+	display: block;
+	border-radius: 50%;
+	width: 20%;
+	height: 36px;
+	margin: 0 auto;
+	padding: 25.6px 0;
+}
+/*按钮样式*/
+#fastener{
+	width: 8.0rem;
+	height: 2.5rem;
+	color: pink;
+	background-color: red;
+	border: none;
+	border-radius: 5%; 
+	/*点击时的边框*/
+	outline: none;
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	cursor: pointer;
+}
+#fastener:hover{
+	font-weight: 600;
+	font-size: 18px;
+	color: #fff;
+}

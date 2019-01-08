@@ -1,0 +1,30 @@
+html,body,div,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,header,footer,menu,table{
+	margin: 0;
+	padding: 0;
+}
+img,input{
+	border: 0;
+}
+ul,ol,li{
+	list-style: none;
+}
+body{
+	height: 100%;
+	width: 100%;
+	font-family:KaiTi,Microsoft YaHei,Arial,STXingkai;
+}
+.m{
+	margin: 0.25rem 0;
+}
+.bor_radius{
+	border-radius: 10%;
+	/*box-shadow:20px 10px 2px 3px #7b99b8;*/
+	box-shadow: 2px 2px 10px gold, 2px 2px 10px purple;
+}
+/*skill居中显示*/
+.center{
+	display: inline-block;
+	line-height: 100px;
+	margin-top: 13px;
+}
+/*skill背景图*/

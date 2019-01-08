@@ -1,0 +1,7 @@
+animation: 第一个XX
+alternate缓冲(缓慢)
+infinite 循环(无限循环)
+第一个值是@keyframes XX{0%{}100%{}}
+
+transition用来设置过度动画
+transfrom:特效旋转

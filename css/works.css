@@ -1,0 +1,64 @@
+#personalWorks{
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.works_bg{
+	background: url(../image/work.jpg) no-repeat center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -99;
+	opacity: 0.88;
+	background-size:100% 100%;
+}
+.work_font{
+	font-size: 3rem;
+	padding-top: 3.5rem;
+	text-align: center;
+	color:#6856a6;
+}
+/*设置demo样式*/
+.works_list{
+	width: 100%;
+	height: 70%;
+	overflow: hidden;
+}
+.works_list_1{
+	width: 100%;
+	height: 50%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+/*第一个样式*/
+.work_col_1{
+	width: 13%;
+	height: 70%;
+}
+/*皮卡丘*/
+.work_col_bg1{
+	background: url(../image/bika1.jpg) no-repeat center;
+	background-size: cover;
+}
+.work_col_bg2{
+	background: url(../image/bika2.jpg) no-repeat center;
+	background-size: cover;
+}
+.work_col_bg3{
+	background: url(../image/bika3.jpg) no-repeat center;
+	background-size: cover;
+}
+.work_col_bg4{
+	background: url(../image/bika4.jpg) no-repeat center;
+	background-size: cover;
+}
+.work_col_bg5{
+	background: url(../image/bika5.jpg) no-repeat center;
+	background-size: cover;
+}
+.work_col_bg6{
+	background: url(../image/bika6.jpg) no-repeat center;
+	background-size: cover;
+}

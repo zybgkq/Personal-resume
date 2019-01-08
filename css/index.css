@@ -1,0 +1,332 @@
+/*index css*/
+#header{
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	color: #fff;
+}
+.logo{
+	position: relative;
+	z-index:99;
+	background:url(../image/logo.jpg) no-repeat;
+	background-size: cover;
+	/*cover:充满容器*/
+	width: 6.0rem;
+	height: 6.0rem;
+	margin:7.0rem auto 2.0rem;
+	border-radius: 50%;
+	cursor: pointer;
+	transition:1s;
+	animation: logoNow .5s;
+}
+@keyframes logoNow {
+	0%{
+		transform: scale(0);
+	}
+	20%{
+		transform: scale(0.2);
+	}
+	40%{
+		transform: scale(0.4);
+	}
+	60%{
+		transform: scale(0.6);
+	}
+	80%{
+		transform: scale(0.8);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+#header .logo:hover{
+	transform: rotate(360deg);
+	opacity: 0.8;
+}
+.hail{
+	font-size: 4.0rem;
+}
+.b{
+	font-weight: 800;
+	font-size: 1.3rem;
+}
+#header ol{
+	width: 100%;
+	position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+#header ol #bg1{
+	position: relative;;
+	height: 100%;
+	transition: all 2s;
+	background-size: cover;
+	/*background: url(../image/fresh.jpg) no-repeat 50%;*/
+	z-index: -99;
+}
+.next{
+	background: url(../image/next.png) no-repeat center;
+	width: 3rem;
+	height: 4.88rem;
+	/*上下抖动*/
+	animation: next .8s infinite alternate;
+	position: absolute;
+	bottom: 13px;
+}
+@keyframes next{
+	0%{
+		transform: translateY(0%);
+	}
+	50%{
+		transform: translateY(20%);
+	}
+	100%{
+		transform: translateY(0%);
+	}
+}
+
+
+/*skill css*/
+#skill{
+	width: 100%;
+	height:100vh;
+	text-align: center;
+	color: #fff;
+}
+/*bg*/
+.skill_bg{
+	background: url(../image/bg3.jpg) no-repeat center center;
+	background-size: 100% 100%;
+	opacity: 0.89;
+	/*background-color: rgba(0,0,0,0.2);*/
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	z-index: -99;
+}
+.skill_title{
+	font-size: 66px;
+	padding-top: 3.25rem;
+	/*文本渐变*/
+	background: linear-gradient(to top right, #CDDC39 0%, #8BC34A 25%, #FFEB3B 100%);
+	/*设置文本*/
+	-webkit-background-clip: text; 
+	/*文本透明*/
+  	color: transparent;
+	/*background: -webkit-linear-gradient(red, blue);*/
+	-ms-color: #fff;
+}
+#skill_content{
+	margin-top: 3%;
+	padding: 10px;
+	position: absolute;
+	left: 30%;
+}
+/*技能排列*/
+.skill_list{
+	width: 100%;
+	height: 70%;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	color: #fff;
+}
+.skill_list p{
+	line-height: 1.5rem;
+}
+.col_1{
+	width: 15%;
+	height: 40%;
+	background-color: rgba(0,0,0,.5);
+	position: relative;
+}
+.col_2{
+	width: 15%;
+	height: 40%;
+	background-color: rgba(0,0,0,.5);
+	position: relative;
+}
+.col_3{
+	width: 15%;
+	height: 40%;
+	background-color: rgba(0,0,0,.5);
+	position: relative;
+}
+.col_4{
+	width: 15%;
+	height: 40%;
+	background-color: rgba(0,0,0,.5);
+	position: relative;
+}
+.col_5{
+	width: 15%;
+	height: 40%;
+	background-color: rgba(0,0,0,.5);
+	position: relative;
+	/*85339222*/
+}
+.html_introduce{
+	position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    opacity: 0;
+    transition: all 3s;
+    overflow: hidden;
+}
+/*鼠标划入第一个旋转*/
+.col_1:hover{
+	animation: skillRotate 2s;
+}
+.html_big{
+	transition: all 2s;
+	opacity: 1;
+	/*transition动画过渡*/
+}
+.col_1:hover .html_big{
+	opacity: 0;
+}
+.col_1:hover .html_introduce{
+	opacity: 1;
+}
+/*第二个*/
+.col_2:hover{
+	animation: skillScale 2s;
+}
+.col_2:hover .html_big{
+	opacity: 0;
+}
+.col_2:hover .html_introduce{
+	opacity: 1;
+}
+/*第三个*/
+.col_3:hover{
+	animation: skillSkew 2s;
+}
+.col_3:hover .html_big{
+	opacity: 0;
+}
+.col_3:hover .html_introduce{
+	opacity: 1;
+}
+/*第四个*/
+.col_4:hover{
+	animation: skillTranslate 2s;
+}
+.col_4:hover .html_big{
+	opacity: 0;
+}
+.col_4:hover .html_introduce{
+	opacity: 1;
+}
+/*第五个*/
+.col_5:hover{
+	animation: skillAll 2s;
+}
+.col_5:hover .html_big{
+	opacity: 0;
+}
+.col_5:hover .html_introduce{
+	opacity: 1;
+}
+/*rotate旋转*/
+@keyframes skillRotate{
+	from{
+	transform: skew(30deg,-8deg)
+	}
+	to{
+		transform: skew(-30deg,8deg)
+	}
+}
+/*scale缩放*/
+@keyframes skillScale{
+	0%{
+		transform: translate(-0.25rem,0.25rem);
+	}
+	100%{
+		transform: translate(0.25rem,-0.25rem);
+	}
+}
+/*skew倾斜*/
+@keyframes skillSkew{
+	from{
+		transform: skew(30deg,-8deg)
+	}
+	to{
+		transform: skew(-30deg,8deg)
+	}
+}
+/*translate位移*/
+@keyframes skillTranslate{
+	0%{
+		transform: translate(0.25rem,-0.25rem);
+	}
+	100%{
+		transform: translate(-0.25rem,0.25rem);
+	}
+}
+@keyframes skillAll{
+	0%{
+		transform: scale(-1) rotate(0);
+	}
+	100%{
+		transform: scale(1) rotate(360deg);
+	}
+}
+/*让背景图左右摇摆*/
+.skill_list_bg{
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: url(../image/pig.png) no-repeat center center;
+	background-size: 100%;
+	margin: 0 auto;
+	animation: moveBackground 5s linear infinite alternate;
+	opacity: 1;
+}
+@keyframes moveBackground{
+  10% {
+    transform: rotate(25deg);
+  }
+  30% {
+    transform: rotate(-18deg);
+  }
+  50% {
+    transform: rotate(8deg);
+  }
+  70% {
+    transform: rotate(-18deg);
+  }
+  100% {
+    transform: rotate(25deg);
+  }
+}
+
+
+
+/*作品展示遮罩*/
+.wyMusic{
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	opacity: 0;
+	color: #fff;
+	font-size: 20px;
+	line-height: 143px;
+	text-align: center;
+	transition: all 0.6s;
+}
+.work_col_1:hover .wyMusic{
+	background-color: #000;
+	opacity: 0.5;
+	display: block;
+	border-radius: 12px;
+	line-height: 143px;
+	text-align: center;
+}

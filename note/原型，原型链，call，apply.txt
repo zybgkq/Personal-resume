@@ -1,0 +1,50 @@
+原型，原型链，call/apply
+
+构造函数的首字母必须要大写
+
+__proto__:XX.prototype
+例：
+function person(){};
+
+person.prototype.name = "ying";
+
+var people = new person();
+
+person.prototype.name = "zhang";
+输出zhang
+指再原有的基础上把属性值改了
+
+
+例：
+function person(){};
+
+person.prototype.name = "ying";
+
+var people = new person();
+
+person.prototype={
+	name:"zhang"
+}
+输出ying
+指改了原型：__proto__ = people.prototype
+执行顺序不一样，先生成了new构造函数，再person.prototype
+
+function person(){};
+
+person.prototype.name = "ying";
+
+person.prototype={
+	name:"zhang"
+}
+var people = new person();
+
+输出 zhang
+
+
+简单注释：
+var a = {namr:"ying"};
+var b = a;
+a = {name:"zhang"};
+console.log(a)  //zhang
+console.log(b) //ying
+引用值的互相赋值
