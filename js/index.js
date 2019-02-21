@@ -5,6 +5,7 @@ window.onload = function(){
 	var head = document.getElementById("bg1");
 	// 获取对象
 	head.style.background = "url(../image/mushroom.jpg)";
+    head.style.backgroundSize = "cover";
 	// head.style.opacity = 0.6;	
 	// 设置图片的初始化图片路径
 	function Time(){
@@ -20,6 +21,7 @@ window.onload = function(){
     			if (head) {
     				// console.log("1")
     				head.style.opacity = num;
+                    head.style.backgroundSize = "cover";
     			}
     		})(i)
     	}

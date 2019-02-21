@@ -55,10 +55,18 @@
 	background-size: cover;
 }
 .work_col_bg5{
-	background: url(../image/bika5.jpg) no-repeat center;
+	background: url(../image/bika6.jpg) no-repeat center;
 	background-size: cover;
 }
 .work_col_bg6{
-	background: url(../image/bika6.jpg) no-repeat center;
+	background: url(../image/bika5.jpg) no-repeat center;
+	background-size: cover;
+}
+.work_col_bg7{
+	background: url(../image/bika7.jpg) no-repeat center;
+	background-size: cover;
+}
+.work_col_bg8{
+	background: url(../image/bika8.jpg) no-repeat center;
 	background-size: cover;
 }
